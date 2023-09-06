@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>ANIMASI</title>
-   <style>
+  <title>animasi</title>
+  <style>
   *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
   }
   body{
     min-height: 100vh;
-    background:#616161;
+    background-color: black;
   }
   .container{
     position: relative;
@@ -18,44 +18,83 @@
     height: 100vh;
     overflow: hidden;
   }
-  .coba{
+  .animasi{
     position: relative;
     display: flex;
   }
-  .coba span{
+  .animasi span{
     position: relative;
-    width: 500px;
-    height:10px ;
-    background-color: #55FFFB;
-    margin:0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #58D4D1,
-                0 0 50px #55FFFB,
-                0 0 100px #55FFFB;
+    width: 12px;
+    height:12px;
+    background-color: white;
+    margin: 0 2px;
+    border-radius: 50px;
+    box-shadow: 0 0 0 2.5px #D0FFB4,
+                0 0 12.5px white,
+                0 0 25px white;
     animation: animate 15s linear infinite;
-    
+    animation-duration: calc(50s / var(--i));
   }
-  .coba span:nth-child(even){
-     background-color: #FF030B;
-    margin:0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #FF444B,
-                0 0 50px #FF030B,
-                0 0 100px #FF030B;
+  .animasi span:nth-child(even){
+    background-color: white;
+    margin: 0 2px;
+    border-radius: 50px;
+    box-shadow: 0 0 0 2.5px #D0FFB4,
+                0 0 12.5px white,
+                0 0 25px white;
   }
   @keyframes animate{
-    0%{
-      transform: translateY(100vh) scale(0);
+    0%{ transform: translateY(100vh) scale(0);
     }
-    100%{
-      transform: translateY(-50vh) scale(1);
+    100%{ transform: translateY(-10vh) scale(1);
     }
   }
-   </style>
+  .img{
+    position: absolute;
+  
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 85px;
+    z-index: 1;
+  }
+  
+ h1{
+   margin-top: 7px;
+   position: absolute;
+   color: white;
+   left: 40px;
+   font-size: 40px;
+   z-index: 1;
+  
+ }
+.txt{
+   position: absolute;
+   font-family: Times New Roman;
+   top: 250px;
+   font-size: 0.9em;
+   text-align:center;
+   color: white ;
+   z-index: 1;
+ }
+ audio{
+   position: absolute;
+   left: 30px;
+   top: 500px;
+   z-index: 1;
+ }
+  </style>
 </head>
 <body>
+  <h1> HALLO POLISI</h1>
+  <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyivXFnmG28iHU5sSJKBY74b6Vr1qMlChAbg&usqp=CAU">
+  <h3 class="txt">
+    Selamat datang pak kami dari rakyat
+    biasa, ingin menanyakan masih adakaD0FFB4 <i>"SILA KE-5"</i> di indonesia ini pak???
+    sudah jelas tersangkanya kenapa hukuman mati dibatalkan???
+    apakah polisi sekarang luluh karena uang???</h3>
+  <audio controls="autoplay"src="https://k.top4top.io/m_2804bibh19.mp3"></audio>
   <div class="container">
-    <div class="coba">
+    <div class="animasi">
       <span style="--i:11;"></span>
       <span style="--i:18;"></span>
       <span style="--i:9;"></span>
